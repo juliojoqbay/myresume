@@ -2,5 +2,186 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'M PLUS 1p', sans-serif;
 }
 
+html {
+    font-size: 18px;
+}
+
+/* start style header */
+header {
+    padding: 80px;
+    text-align: center;
+    background-color: rgb(78, 73, 73);
+    color: white;
+}
+
+header h1 {
+    font-size: 40px;
+} /* end style header */
+
+
+/* start style navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #473e3e;
+    color: white;
+} /* end style navbar */
+
+/* start set up layout row container */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+} /* end set up layout row container */
+
+
+/* start Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+aside {
+    flex: 30%;
+    background-color: #f1f1f1f1;
+    padding: 20px;
+}
+
+
+aside h2, aside h5 {
+    text-align: center;
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: block;
+}
+
+/***** start Animation *****/
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #473e3e; 
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .45s ease;
+
+}
+
+.container:hover .overlay {
+    width: 100%;
+}
+
+.overlay p {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+} /***** start Animation *****/
+
+
+.text-card p {
+  padding: 10px;
+}
+
+.text-card p i {
+    padding-right: 10px;
+}
+
+.icons {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+
+
+.social-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+} /* end style aside */
+
+
+
+
+
+
+
+/* start Main column */
+main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+} /* end Main column */
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    
+
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
