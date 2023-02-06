@@ -118,8 +118,13 @@ aside h2, aside h5 {
 } /***** start Animation *****/
 
 
+.text-card {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .text-card p {
-  padding: 10px;
+  padding: 15px 10px;
 }
 
 .text-card p i {
@@ -142,6 +147,10 @@ aside h2, aside h5 {
     
 }
 
+.social-card h3 {
+    text-align: center;
+}
+
 .side {
     display: flex;
     align-items: center;
@@ -149,7 +158,9 @@ aside h2, aside h5 {
 } /* end style aside */
 
 
-
+.facebook {
+    padding-bottom: 15px;
+}
 
 
 
@@ -159,7 +170,82 @@ main {
     flex: 70%;
     background-color: white;
     padding: 20px;
-} /* end Main column */
+} 
+
+
+.education ul, .skills ul {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.education ul li, .skills ul li {
+    padding-top: 15px;
+}
+
+
+.education h3 {
+    padding-top: 20px;
+}
+
+.more-information {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.more-information p{
+    padding-bottom: 20px;
+}
+
+.more-information button{
+    padding: 14px 20px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    background-color: #b4acac;
+    transition: background-color 1s;
+
+}
+
+.more-information button:hover {
+    background-color: #473e3e;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.skills h2 {
+    padding-top: 20px;
+}
+
+.animated-icon {
+    width: 30px;
+}
+
+.python {
+    animation-name: myanimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes myanimation {
+    0% {
+        left:0px;
+        top: 0px;
+        
+    }
+
+    25% {
+        left: 1px;
+        top: 2px;
+    }
+}
+
+
+
+/* end Main column */
 
 
 footer {
