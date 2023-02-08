@@ -5,6 +5,10 @@
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+li {
+    list-style: none;
+}
+
 html {
     font-size: 18px;
 }
@@ -157,6 +161,18 @@ aside h2, aside h5 {
     padding-top: 40px;
 } /* end style aside */
 
+.side a {
+    text-decoration: none;
+    transition: all 0.8s;
+}
+
+.side a:hover {
+    text-decoration: underline;
+    border-radius: 0.5rem;
+}
+
+
+
 
 .facebook {
     padding-bottom: 15px;
@@ -175,7 +191,6 @@ main {
 
 .education ul, .skills ul {
     padding-top: 10px;
-    padding-left: 30px;
     padding-bottom: 20px;
 }
 
@@ -188,9 +203,19 @@ main {
     padding-top: 20px;
 }
 
+.list-icons {
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.education span {
+    padding-left: 20px;
+}
+
 .more-information {
     padding-top: 20px;
     padding-bottom: 15px;
+    
 }
 
 .more-information p{
@@ -242,6 +267,15 @@ main {
         top: 2px;
     }
 }
+
+.stacks {
+    display: flex;
+}
+
+.stacks span {
+    padding-left: 20px;
+}
+
 
 
 
